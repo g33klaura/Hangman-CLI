@@ -8,7 +8,7 @@ Steps to complete:
 [] Each constructor function in it's own file (use module.exports)
 [] Use function prototypes
     https://www.thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/)
-[] Push to Github - include package.json & .gitignore
+[x] Push to Github - include package.json & .gitignore
 []
 */
 
@@ -20,8 +20,8 @@ console.log('=-------------=');
 // REQUIREMENTS ==========================
 //
 var inquirer = require('inquirer');
-var word = require('./word.js');
-var letter = require('./letter.js');
+// var word = require('./word.js');
+// var letter = require('./letter.js');
 
 
 
