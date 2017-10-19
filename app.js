@@ -10,7 +10,20 @@ Steps to complete:
     https://www.thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/)
 [x] Push to Github - include package.json & .gitignore
 []
+
+*Which needs to come first? The word or the letter?
+*Letter first >> Word?
+
+*Letters guessed move to array
+*Array of guessed letters gets checked against array of letters in puzzle words
+
+*Q: How to replace underscore with correctly guessed letter?
+
+
+
+
 */
+
 
 // Which looks better? :)
 console.log('|-------------|');
