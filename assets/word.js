@@ -4,6 +4,7 @@
 // 
 const readline = require('readline');
 const fs = require('fs');
+let Letter = require('letter.js');
 
 
 
