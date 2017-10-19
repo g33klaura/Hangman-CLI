@@ -5,4 +5,4 @@ Command line game of hangman!
 Node.js, Inquirer package
 
 # Map of game flow
-![Img](/Hangman-CLI/assets/hangman-flow.png?raw=true)
+![Img](/assets/hangman-flow.png?raw=true)
