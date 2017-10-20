@@ -4,7 +4,7 @@
 // 
 // const readline = require('readline');
 const fs = require('fs');
-let Letter = require('letter.js');
+let Letter = require('./letter.js');
 
 
 
@@ -32,8 +32,6 @@ rl.on('line', function (line) {
 
 
 
-
-
 // CONSTRUCTORS ====================
 // 
 
@@ -41,6 +39,15 @@ rl.on('line', function (line) {
 // Use 'word' as argument placeholder
 const GameWord = function(word) {
 	this.word = word;
+	this.wordAsArray = []; //break apart the word as individual letters
+	this.spaces = ' _ ';
+
+	// Need prototype to check if guessed letter is in word array
 };
+
+
+
+// EXPORTS ==========================
+//
 
 module.exports = GameWord;
