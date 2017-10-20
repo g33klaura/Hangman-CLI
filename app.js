@@ -47,6 +47,20 @@ let guesses = 10;
 // FUNCTIONS ==========================
 //
 
+function startGame() {
+	console.log('Welcome to Hangman: Famous Duck Names Edition!');
+	console.log('+-------------+');
+	console.log('Guess a letter in the mystery word. The word is the name of a famous duck. You have 10 chances. Good luck!');
+
+	// Show mystery word, made up of underscores
+
+
+	// Run playerGuess function, unless that will happen as part of "word" function....
+	// playerGuess();
+}
+
+
+
 // Need inquirer.prompt to endGame if out of guesses or fed up with word
 // ...and start a new game?
 function endGame() {
@@ -60,7 +74,10 @@ function endGame() {
 	])
 	.then(function(response) {
 
-		if (newGame === true) {
+		// ~WORKS (forgot to put 'response' before newGame)
+		console.log(response.newGame);
+
+		if (response.newGame === true) {
 
 			console.log('New game started. Let\'s see whatcha got!');
 			// playerGuess();
@@ -68,13 +85,12 @@ function endGame() {
 			// startGame();
 
 		} else {
-
 			console.log('Guess you\'ve had enough. See ya!');
-
 		}
-
 	});
 }
+
+// endGame();
 
 
 
@@ -82,7 +98,7 @@ function endGame() {
 //
 
 // Start the game
-// Should I have a startGame() too, so it'll show the length of the word before player guesses
+// startGame();
 
 // Function undefined when trying to run off letter.js
 
