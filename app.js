@@ -1,7 +1,7 @@
 // Hangman Cli App
 /*
 Steps to complete:
-[] Use inquirer package
+[x] Use inquirer package
 [] Constructors for "Word" and "Letter"
 [] Keep track of user's remaining guesses
 [] Prompt user if they want to end the game if out of guesses (and replay?)
@@ -33,23 +33,36 @@ console.log('=-------------=');
 // REQUIREMENTS ==========================
 //
 var inquirer = require('inquirer');
-// var word = require('./word.js');
+var word = require('./word.js');
 // var letter = require('./letter.js');
-
 
 
 
 // VARIABLES ==========================
 //
 
+// Controls how many guesses a player has in each game
+let guesses = 10;
 
 
 
 // FUNCTIONS ==========================
 //
 
+// Need inquirer.prompt to endGame if out of guesses or fed up with word
+// ...and start a new game?
 
 
 
 // MAIN PROCESS ==========================
 //
+
+// Start the game
+// playerGuess();
+
+
+
+
+
+
+
