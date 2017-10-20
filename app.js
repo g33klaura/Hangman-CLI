@@ -2,7 +2,7 @@
 /*
 Steps to complete:
 [x] Use inquirer package
-[] Constructors for "Word" and "Letter"
+[x] Constructors for "Word" and "Letter"
 [x] Keep track of user's remaining guesses
 [] Prompt user if they want to end the game if out of guesses (and replay?)
 [x] Each constructor function in it's own file (use module.exports)
@@ -49,17 +49,47 @@ let guesses = 10;
 
 // Need inquirer.prompt to endGame if out of guesses or fed up with word
 // ...and start a new game?
+function endGame() {
+	inquirer.prompt([
+		{
+			type: 'confirm',
+			message: 'Start a new game?',
+			name: 'newGame',
+			default: true
+		}
+	])
+	.then(function(response) {
+
+		if (newGame === true) {
+
+			console.log('New game started. Let\'s see whatcha got!');
+			// playerGuess();
+			// or
+			// startGame();
+
+		} else {
+
+			console.log('Guess you\'ve had enough. See ya!');
+
+		}
+
+	});
+}
 
 
 
 // MAIN PROCESS ==========================
 //
 
-// Function undefined when trying to run off letter.js :(
 // Start the game
+// Should I have a startGame() too, so it'll show the length of the word before player guesses
+
+// Function undefined when trying to run off letter.js
+
 // Letters.prototype.playerGuess();
 // letter.prototype.playerGuess();
-letter.playerGuess();
+// letter.Letters.prototype.playerGuess();
+// letter.playerGuess();
 
 
 
