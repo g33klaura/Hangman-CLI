@@ -17,14 +17,15 @@ let lettersGuessed = [];
 // CONSTRUCTORS ====================
 // 
 
-// Should this be LettersGuessed ? 
+// Constructor to do something with the letters....
 let Letters = function(letter) {
+	
 	this.letter = letter;
+	this.guessed = false; //until it's true?....
+	this.inWord = false;  //same as above....
 
 	// Probably missing things still....
 };
-
-module.exports = Letters;
 
 
 
@@ -54,3 +55,9 @@ function playerGuess() {
 	});
 }
 
+
+
+// EXPORTS ==========================
+//
+
+module.exports = Letters;
