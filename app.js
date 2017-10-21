@@ -49,8 +49,8 @@ let guesses = 10;
 
 function startGame() {
 	console.log('Welcome to Hangman: Famous Duck Names Edition!');
-	console.log('+-------------+');
-	console.log('Guess a letter in the mystery word. The word is the name of a famous duck. You have 10 chances. Good luck!');
+	console.log('-------------');
+	console.log('Guess a letter in the mystery word. The word is the name of a famous duck.\nYou have 10 guesses. Good luck! *quack*');
 
 	// Show mystery word, made up of underscores
 
@@ -75,22 +75,24 @@ function endGame() {
 	.then(function(response) {
 
 		// ~WORKS (forgot to put 'response' before newGame)
-		console.log(response.newGame);
+		// console.log(response.newGame);
 
 		if (response.newGame === true) {
 
 			console.log('New game started. Let\'s see whatcha got!');
+			console.log('-------------');
 			// playerGuess();
 			// or
-			// startGame();
+			startGame();
 
 		} else {
-			console.log('Guess you\'ve had enough. See ya!');
+			console.log('Guess you\'ve had enough. Until next time!');
+			console.log('-------------');
 		}
 	});
 }
 
-// endGame();
+endGame();
 
 
 
