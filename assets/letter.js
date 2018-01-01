@@ -21,11 +21,28 @@ let lettersGuessed = [];
 let Letters = function(letter) {
 
 	this.letter = letter;
-	this.guessed = false; //until it's true?....
+	// this.guessed = false; //until it's true?....
+	this.guessed = !/a-z1-9/i.test(char); //regEx stuff from Ronny's example
 	this.inWord = false;  //same as above....
 
 	// Probably missing things still....
 };
+
+// ########################################################
+
+Letter.prototype.toString = function() {
+	if (this.guessed === true) {
+		return this.letter;
+	}
+	return '_';
+};
+
+
+
+
+
+
+
 
 
 

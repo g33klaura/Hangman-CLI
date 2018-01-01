@@ -38,6 +38,31 @@ const GameWord = function(word) {
 // So. Very. Lost.
 
 
+// ########################################################
+
+function Word(word) {
+	// splits the word into strings of individial letters
+	this.letters = word.split('')
+	// this makes them letter objects
+	.map(function(char) {
+		return new Letter(char);
+	});
+}
+
+Word.prototype.toString = function() {
+	return this.letters.join(' ');
+};
+
+Word.prototype.guessLetter = function(char) {
+	// Here's where the letters are checked against the array of letters of the word
+	// And matches to the user's guess or not
+}
+
+
+
+
+
+
 
 // EXPORTS ==========================
 //
